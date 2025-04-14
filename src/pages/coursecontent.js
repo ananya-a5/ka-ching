@@ -1528,7 +1528,7 @@ const CourseContent = () => {
 
   const currentStepData = {
     id: currentStep,
-    title: currentStep === 1 ? "Introduction to Stock Market Basics" : `Section ${currentStep}`,
+    title: currentStep === 1 ? "Introduction to Stock Market Basics" : `Section ${currentStep}`, //The linkage problem is here cos 1 and 2 are hard coded but 3 onwards is dynamic and it doesnt work
     modules: [
       {
         id: currentModule,
@@ -1543,6 +1543,8 @@ const CourseContent = () => {
       },
     ],
   }
+
+  
 
 
   /*const currentModuleData = {
