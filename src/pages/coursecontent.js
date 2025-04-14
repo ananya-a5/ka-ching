@@ -228,51 +228,44 @@ const CourseContent = () => {
       {
         title: "Start with your Why",
         type: "content",
-        content: (<div className="space-y-4">
+        content:(<div className="space-y-6 text-base leading-relaxed">
           <p className="text-sm text-gray-600 italic">
             💡 Hover over the <span className="text-blue-600 underline decoration-dotted">blue underlined</span> terms for quick explanations.
             </p>
-          <div>
-            <h3 className="text-lg font-semibold">🎯 Start with Why</h3>
-            <p>
-              Most beginners jump straight to <strong>what</strong> to invest in. But a smarter first step is to ask: 
-              <strong>why</strong> are you investing? Is it for a house, retirement, or an emergency fund?
-              Your reason sets the foundation for everything else.
-            </p>
-          </div>
-        
-          <div>
-            <h3 className="text-lg font-semibold">⏳ Match Strategy to Time Horizon</h3>
-            <p>
-              <strong>Different goals</strong> come with <strong>different timelines</strong>. A retirement plan in 30 years allows for a different investment
-              approach than saving for a vacation next year. Your <strong>time horizon</strong> influences both your 
-              <span title="Risk refers to the possibility that your investment loses value." className="text-blue-600 underline decoration-dotted"> risk </span>
-              and 
-              <span title="Liquidity is how easily an asset can be turned into cash." className="text-blue-600 underline decoration-dotted"> liquidity </span>
-              needs.
-            </p>
-          </div>
-        
-          <div>
-            <h3 className="text-lg font-semibold">⚠️ Risk Tolerance Over Time</h3>
-            <p>
-              The <strong>longer</strong> your <strong>time</strong> horizon, the <strong>more risk</strong> your portfolio can typically handle.
-              This is because 
-              <span title="Risk refers to the possibility that your investment loses value." className="text-blue-600 underline decoration-dotted"> investment risk</span>—the chance of losing money—tends to even out over time.
-              Short-term goals require lower-risk options, since you may need the money soon and can’t afford a dip in value.
-            </p>
-          </div>
-        
-          <div>
-            <h3 className="text-lg font-semibold">💧 Liquidity and Access to Funds</h3>
-            <p>
-              <span title="Liquidity is how easily an asset can be turned into cash." className="text-blue-600 underline decoration-dotted">Liquidity</span> matters depending on
-              when you'll need the money. Short-term goals require assets you can quickly convert to cash (like cash or savings),
-              while long-term goals can be placed in less liquid investments (like stocks or property), which may offer better returns.
-            </p>
-          </div>
-        </div>
- 
+            <div>
+    <h3 className="text-lg font-semibold">🎯 Start with Why</h3>
+    <p>
+      Don’t start with what to invest in—start with <strong>why</strong>. Is it for a house? Retirement? An emergency?
+      Your goal shapes everything else.
+    </p>
+  </div>
+
+  <div>
+    <h3 className="text-lg font-semibold">⏳ Time Affects Strategy</h3>
+    <p>
+      Short-term vs. long-term goals need different plans. A 30-year goal lets you take more
+      <span title="Risk refers to the possibility that your investment loses value." className="text-blue-600 underline decoration-dotted"> risk</span>. 
+      A 1-year goal? Keep it stable and 
+      <span title="Liquidity is how easily an asset can be turned into cash." className="text-blue-600 underline decoration-dotted"> liquid</span>.
+    </p>
+  </div>
+
+  <div>
+    <h3 className="text-lg font-semibold">⚠️ Risk Over Time</h3>
+    <p>
+      The longer you invest, the more ups and downs your money can handle.
+      <span title="Risk refers to the possibility that your investment loses value." className="text-blue-600 underline decoration-dotted"> Risk</span> evens out over time—so don’t fear it if you’re in for the long haul.
+    </p>
+  </div>
+
+  <div>
+    <h3 className="text-lg font-semibold">💧 Liquidity = Access</h3>
+    <p>
+      <span title="Liquidity is how easily an asset can be turned into cash." className="text-blue-600 underline decoration-dotted">Liquidity</span> means how fast you can turn your investment into cash.
+      If you need the money soon, choose something easy to access.
+    </p>
+  </div>
+</div>
         
         ),
       },
