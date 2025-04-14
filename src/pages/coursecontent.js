@@ -229,6 +229,9 @@ const CourseContent = () => {
         title: "Start with your Why",
         type: "content",
         content: (<div className="space-y-4">
+          <p className="text-sm text-gray-600 italic">
+            💡 Hover over the <span className="text-blue-600 underline decoration-dotted">blue underlined</span> terms for quick explanations.
+            </p>
           <div>
             <h3 className="text-lg font-semibold">🎯 Start with Why</h3>
             <p>
