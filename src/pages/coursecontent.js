@@ -232,7 +232,7 @@ const CourseContent = () => {
           <div>
             <h3 className="text-lg font-semibold">🎯 Start with Why</h3>
             <p>
-              Most beginners jump straight to <strong>what</strong> to invest in. But a smarter first step is to ask:
+              Most beginners jump straight to <strong>what</strong> to invest in. But a smarter first step is to ask: 
               <strong>why</strong> are you investing? Is it for a house, retirement, or an emergency fund?
               Your reason sets the foundation for everything else.
             </p>
@@ -241,18 +241,21 @@ const CourseContent = () => {
           <div>
             <h3 className="text-lg font-semibold">⏳ Match Strategy to Time Horizon</h3>
             <p>
-              Different goals come with different timelines. A retirement plan in 30 years allows for a different investment
-              approach than saving for a vacation next year. Your <strong>time horizon</strong> influences both your
-              risk and liquidity needs.
+              <strong>Different goals</strong> come with <strong>different timelines</strong>. A retirement plan in 30 years allows for a different investment
+              approach than saving for a vacation next year. Your <strong>time horizon</strong> influences both your 
+              <span title="Risk refers to the possibility that your investment loses value." className="text-blue-600 underline decoration-dotted"> risk </span>
+              and 
+              <span title="Liquidity is how easily an asset can be turned into cash." className="text-blue-600 underline decoration-dotted"> liquidity </span>
+              needs.
             </p>
           </div>
         
           <div>
             <h3 className="text-lg font-semibold">⚠️ Risk Tolerance Over Time</h3>
             <p>
-              The longer your time horizon, the more risk your portfolio can typically handle.
-              This is because <span title="Risk refers to the possibility that your investment loses value.">
-              investment risk</span>—the chance of losing money—tends to even out over time.
+              The <strong>longer</strong> your <strong>time</strong> horizon, the <strong>more risk</strong> your portfolio can typically handle.
+              This is because 
+              <span title="Risk refers to the possibility that your investment loses value." className="text-blue-600 underline decoration-dotted"> investment risk</span>—the chance of losing money—tends to even out over time.
               Short-term goals require lower-risk options, since you may need the money soon and can’t afford a dip in value.
             </p>
           </div>
@@ -260,12 +263,13 @@ const CourseContent = () => {
           <div>
             <h3 className="text-lg font-semibold">💧 Liquidity and Access to Funds</h3>
             <p>
-              <span title="Liquidity is how easily an asset can be turned into cash.">Liquidity</span> matters depending on
+              <span title="Liquidity is how easily an asset can be turned into cash." className="text-blue-600 underline decoration-dotted">Liquidity</span> matters depending on
               when you'll need the money. Short-term goals require assets you can quickly convert to cash (like cash or savings),
               while long-term goals can be placed in less liquid investments (like stocks or property), which may offer better returns.
             </p>
           </div>
         </div>
+ 
         
         ),
       },
