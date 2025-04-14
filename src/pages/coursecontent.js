@@ -1561,6 +1561,16 @@ const currentModuleData = {
       : [],
 } //updated
 
+console.log("=== Current Step and Module ===")
+console.log("Step:", currentStep)
+console.log("Module:", currentModule)
+
+console.log("=== Selected Content ===")
+console.log("moduleContent[step-1][module-1]:", moduleContent[currentStep - 1]?.[currentModule - 1])
+
+console.log("=== Full currentModuleData ===")
+console.log(currentModuleData)
+
   // Get the content after defining currentModuleData
   const currentQuiz = currentModuleData.quiz
   const currentContent = Array.isArray(currentModuleData.contentSections) ? currentModuleData.contentSections : []
