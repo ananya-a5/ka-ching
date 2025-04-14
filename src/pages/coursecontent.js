@@ -165,35 +165,6 @@ const CourseContent = () => {
 
   // Handle quick check answer selection
   const handleQuickCheckAnswer = (questionId, selectedOption) => {
-    setQuickCheckAnswers({
-      ...quickCheckAnswers,
-      [questionId]: selectedOption,
-    })
-
-    // Check if answer is correct
-    const isCorrect = quickCheckQuestions[questionId].correctAnswer === selectedOption
-
-    setQuickCheckFeedback({
-      ...quickCheckFeedback,
-      [questionId]: isCorrect,
-    })
-
-    if (!isCorrect && heartsSystem) {
-      // Use the heartsRef to lose a heart
-      if (heartsRef.current && typeof heartsRef.current.loseHeart === "function") {
-        heartsRef.current.loseHeart()
-      }
-    }
-
-    // If correct, show a small confetti effect
-    if (isCorrect) {
-      confetti({
-        particleCount: 30,
-        spread: 50,
-        origin: { y: 0.6, x: 0.5 },
-        colors: ["#5a7d53", "#f0d878", "#85bb65"],
-      })
-    }
   }
 
   // Reset quick check answer
@@ -257,13 +228,45 @@ const CourseContent = () => {
       {
         title: "Start with your Why",
         type: "content",
-        content: (
-          <div className="space-y-4">
-            <p className="mb-3">Beginners often focus on what to invest in, but first, identify why.</p>
-            <p className="mb-3">Different goals have different time horizons.</p>
-            <p className="mb-3">Time horizons affect risk tolerance: longer = more risk, shorter = less risk.</p>
-            <p className="mb-3">Different goals also affect liquidity: longer = less liquid, shorter = more liquid</p>
+        content: (<div className="space-y-4">
+          <div>
+            <h3 className="text-lg font-semibold">🎯 Start with Why</h3>
+            <p>
+              Most beginners jump straight to <strong>what</strong> to invest in. But a smarter first step is to ask:
+              <strong>why</strong> are you investing? Is it for a house, retirement, or an emergency fund?
+              Your reason sets the foundation for everything else.
+            </p>
           </div>
+        
+          <div>
+            <h3 className="text-lg font-semibold">⏳ Match Strategy to Time Horizon</h3>
+            <p>
+              Different goals come with different timelines. A retirement plan in 30 years allows for a different investment
+              approach than saving for a vacation next year. Your <strong>time horizon</strong> influences both your
+              risk and liquidity needs.
+            </p>
+          </div>
+        
+          <div>
+            <h3 className="text-lg font-semibold">⚠️ Risk Tolerance Over Time</h3>
+            <p>
+              The longer your time horizon, the more risk your portfolio can typically handle.
+              This is because <span title="Risk refers to the possibility that your investment loses value.">
+              investment risk</span>—the chance of losing money—tends to even out over time.
+              Short-term goals require lower-risk options, since you may need the money soon and can’t afford a dip in value.
+            </p>
+          </div>
+        
+          <div>
+            <h3 className="text-lg font-semibold">💧 Liquidity and Access to Funds</h3>
+            <p>
+              <span title="Liquidity is how easily an asset can be turned into cash.">Liquidity</span> matters depending on
+              when you'll need the money. Short-term goals require assets you can quickly convert to cash (like cash or savings),
+              while long-term goals can be placed in less liquid investments (like stocks or property), which may offer better returns.
+            </p>
+          </div>
+        </div>
+        
         ),
       },
     ],
