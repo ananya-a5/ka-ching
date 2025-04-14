@@ -261,11 +261,12 @@ const CourseContent = () => {
   <div>
     <h3 className="text-lg font-semibold">💧 Liquidity = Access</h3>
     <p>
-      <span title="Liquidity is how easily an asset can be turned into cash." className="text-blue-600 underline decoration-dotted">Liquidity</span> means how fast you can turn your investment into cash.
+      Liquidity means how fast you can turn your investment into cash.
       If you need the money soon, choose something easy to access.
     </p>
   </div>
 </div>
+
         
         ),
       },
