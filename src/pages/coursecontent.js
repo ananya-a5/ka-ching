@@ -249,6 +249,9 @@ const CourseContent = () => {
 
   // Content sections for each module
   const moduleContent = [
+//Section 1
+    [
+    
     // SECTION 1 MODULE 1
     [
       {
@@ -678,8 +681,11 @@ const CourseContent = () => {
         ),
       },
     ],
-
-
+  ],
+          
+    //Section 2
+    
+    [ 
     // SECTION 2 MODULE 1
     [
       {
@@ -810,6 +816,7 @@ const CourseContent = () => {
     ],
     //Add more sections as needed
   ]
+]
 
   // Quiz data matching quizKey format
   const quizData = {
