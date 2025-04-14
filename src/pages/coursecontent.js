@@ -1540,6 +1540,7 @@ const CourseContent = () => {
     ],
   }
 
+
   /*const currentModuleData = {
     ...currentStepData.modules[0],
     contentSections:
@@ -1563,9 +1564,7 @@ const CourseContent = () => {
 const currentModuleData = {
   ...currentStepData.modules[0],
   contentSections:
-    moduleContent[currentStep - 1] && moduleContent[currentStep - 1][currentModule - 1]
-      ? [moduleContent[currentStep - 1][currentModule - 1]]
-      : [],
+    moduleContent[currentStep - 1]?.[currentModule - 1] || [],
 } //updated
 
 console.log("=== Current Step and Module ===")
